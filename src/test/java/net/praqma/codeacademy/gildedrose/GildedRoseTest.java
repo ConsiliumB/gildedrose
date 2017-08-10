@@ -19,6 +19,6 @@ public class GildedRoseTest {
         Item[] items = new Item[] { new Item("Conjured Mana Cake", 3, 6) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(6, app.items[0].quality);
+        assertEquals(5, app.items[0].quality);
     }
 }
