@@ -16,9 +16,9 @@ public class GildedRoseTest {
     
     @Test
     public void normal_item_normal_quality_degredation() {
-        Item[] items = new Item("Conjured Mana Cake", 3, 6);
+        Item[] items = new Item[] { new Item("Conjured Mana Cake", 3, 6) };
         GildedRose app = new GildedRose(items);
         app.updateQuality();
-        assertEquals(5, app.items[0].quality);
+        assertEquals(6, app.items[0].quality);
     }
 }
